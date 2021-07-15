@@ -76,3 +76,11 @@ img {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .ul {
+    overflow-y: scroll;
+    height: 600px;
+    border: 2px solid white;
+  }
+}
