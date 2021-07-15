@@ -1,0 +1,333 @@
+body {
+  background-color: black;
+  margin: auto;
+}
+h1 {
+  font-family: fantasy;
+  font-weight: lighter;
+  margin-top: 0px;
+  padding-top: 0%;
+  color: yellow;
+}
+p {
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  color: yellow;
+}
+.container {
+  text-align: center;
+}
+
+.navigation {
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: auto 5px;
+  margin-bottom: 0%;
+  border: 2px white solid;
+  margin-top: 16px;
+}
+
+.profile {
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.performance,
+.report,
+.documents,
+.backpage,
+.Profile {
+  text-decoration: none;
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+.singin {
+  text-decoration: none;
+  text-align: end;
+  margin-top: 10px;
+  padding-top: 8px;
+  margin-right: 30px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.signout {
+  text-decoration: none;
+  color: blue;
+  margin-top: 8px;
+  padding-top: 8px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+.signout:hover {
+  background-color: rgb(212, 243, 233);
+}
+
+.dropbtn {
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 150px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(212, 243, 233);
+}
+
+.pro-details {
+  color: #fff;
+  font-family: cursive;
+}
+.daily:hover,
+.monthly:hover,
+.weekly:hover,
+.Monthly-p:hover,
+.Quarterly:hover,
+.Yearly:hover {
+  background-color: rgb(212, 243, 233);
+}
+
+.documents:hover,
+.backpage:hover,
+.Profile:hover {
+  background-color: rgb(212, 243, 233);
+}
+
+.daily,
+.monthly,
+.weekly,
+.Monthly-p,
+.Quarterly,
+.Yearly {
+  padding: 4px;
+  margin: 3px;
+  background: none;
+  text-decoration: none;
+  background-color: white;
+  color: blue;
+}
+
+img,
+.img2 {
+  border-radius: 20px;
+  margin: 6px;
+}
+p {
+  margin: 0px;
+}
+.ul {
+  overflow-y: scroll;
+  height: 550px;
+
+  border: 1px solid black;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  transition: transform 0.2s; /* Animation */
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover {
+  transform: scale(
+    2.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+  body {
+    background-color: black;
+    margin: auto;
+  }
+  h1 {
+    font-family: fantasy;
+    font-weight: lighter;
+    margin-top: 0%;
+    padding-top: 0%;
+  }
+
+  .container {
+    text-align: center;
+  }
+  nav {
+    display: block;
+  }
+  .navigation {
+    border: 1px white solid;
+    margin: auto 0px;
+  }
+
+  .profile {
+    text-decoration: none;
+    color: blue;
+    padding: 0px;
+    font-size: 1px;
+    background-color: white;
+    border: none;
+  }
+  .dropbtn {
+    background-color: white;
+    color: blue;
+    padding: 0px;
+    font-size: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 2px auto;
+    font-weight: bold;
+  }
+  .performance,
+  .report,
+  .documents,
+  .backpage,
+  .Profile {
+    margin: auto;
+    text-decoration: none;
+    color: blue;
+    padding: 0px;
+    font-size: 5px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+  }
+  .singin {
+    text-decoration: none;
+    text-align: end;
+    margin-top: 10px;
+    padding-top: 8px;
+    margin-right: 30px;
+    margin-bottom: 6px;
+    padding-bottom: 0px;
+  }
+  .signout {
+    text-decoration: none;
+    color: blue;
+    margin-top: 8px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 4px;
+    font-weight: bold;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(212, 243, 233);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(212, 243, 233);
+  }
+
+  .daily:hover,
+  .monthly:hover,
+  .weekly:hover,
+  .Monthly-p:hover,
+  .Quarterly:hover,
+  .Yearly:hover {
+    background-color: rgb(212, 243, 233);
+  }
+
+  .daily,
+  .monthly,
+  .weekly,
+  .Monthly-p,
+  .Quarterly,
+  .Yearly {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+  }
+
+  img {
+    border-radius: 20px;
+    margin: auto;
+    height: 160px;
+  }
+  p {
+    margin: 0px;
+  }
+  .ul {
+    overflow-y: scroll;
+    height: 550px;
+
+    border: 1px solid black;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    transition: transform 0.2s; /* Animation */
+  }
+
+  .img1:hover,
+  .img2:hover,
+  .img3:hover,
+  .img4:hover {
+    transform: scale(
+      1.8
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+}

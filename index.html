@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>staff database</title>
+</head>
+<body class="bg-black body">
+    <div class="container tc">
+    <h1 class="yellow staffdata">STAFF DATA</h1>
+    <form>
+        <p class="para"></p>
+        <input class="text" type="text" placeholder="Usersname"required autofocus>
+        <input class="password" type="password" placeholder="Password">
+    </form>
+    <a><button onclick="password()">ENTER</button></a>
+</div>
+    
+
+<script>
+ let message =  document.querySelector(".para")
+function password() {
+    var username = (document.querySelector(".text").value);
+    var password = (document.querySelector(".password").value);
+
+    if(username === "samad" && password === "123456"){
+        window.open("index2.html","_self");
+    }else{
+       message.style.color ="red"
+       message.innerHTML = "<h4>Wrong Password or Username</h4>"
+        
+    }
+}
+
+</script>
+</body>
+</html>

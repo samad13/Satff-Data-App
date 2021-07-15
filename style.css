@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+}
+h1 {
+  font-size: 55px;
+}
+.container {
+  margin: 15% auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 320px;
+  padding: 10px;
+  height: 25px;
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 25px;
+  border: none;
+  outline: none;
+}
+
+button {
+  font-weight: 600;
+  padding: 2px;
+  height: 30px;
+  width: 150px;
+  background-color: yellow;
+  border-radius: 6px;
+  border: none;
+  font-size: larger;
+  margin: auto;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+button:hover {
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 30% auto;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 220px;
+    padding: 5px;
+
+    border-radius: 6px;
+    display: block;
+
+    margin-bottom: 7px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  button {
+    font-weight: 600;
+    padding: 2px;
+    height: 30px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 6px;
+    border: none;
+    font-size: larger;
+    margin: auto;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
